@@ -57,6 +57,8 @@ To deploy a final build with static files:
 
 [x] shutdown fastify instance after all tests
 
+[x] add a test for each route
+
 
 ## Changelog - Front End
 

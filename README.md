@@ -41,7 +41,9 @@ To deploy a final build with static files:
 
 ### -- /src/server.ts
 
-[x] added check for scheduled_for in req.body on /create/ route
+[x] added check for scheduled_for in req.body on `/create/` route
+
+[x] convert to Date when passing dates on `/update/:id` route
 
 ## Changelog - Front End
 
@@ -94,3 +96,7 @@ To deploy a final build with static files:
 [x] display scheduled_for date with each card
 
 [x] add labels for dates
+
+### -- /src/routes/EditEntry.tsx
+
+[x] update for scheduled_for date

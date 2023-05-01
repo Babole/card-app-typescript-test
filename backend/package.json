@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./src/app.ts",
+    "dev": "tsnd --respawn ./src/app.ts",
     "test": "jest --testPathPattern=test/",
     "prisma-setup": "prisma migrate dev && prisma generate"
   },

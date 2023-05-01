@@ -35,6 +35,14 @@ To deploy a final build with static files:
 
 ## Changelog - Back End
 
+### /prisma/schema.prisma
+
+[x] added scheduled_for to Entry model
+
+### /src/server.ts
+
+[x] added check for scheduled_for in req.body on /create/ route
+
 ## Changelog - Front End
 
 ### tailwind.config.js

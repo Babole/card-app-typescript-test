@@ -68,3 +68,5 @@ To deploy a final build with static files:
 [x] add button to setDarkMode to !prev
 
 [x] add button to toggle overlay
+
+[x] dynamically change dark mode button label

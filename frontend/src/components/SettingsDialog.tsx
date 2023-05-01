@@ -29,7 +29,7 @@ export default function SettingsDialog({
             setDarkMode((prev) => !prev);
           }}
         >
-          Toggle Dark Mode
+          Toggle {darkMode ? "Light" : "Dark"} Mode
         </button>
       </div>
     </div>

@@ -16,21 +16,24 @@ export default function NavBar({ darkMode, setDarkMode }: NavBarProps) {
   };
 
   return (
-    <nav className="flex justify-center gap-5">
-      <NavLink
-        className="m-3 p-4 text-xl bg-blue-400 hover:bg-blue-500 rounded-md font-medium text-white" 
-        to={"/"}
-      >
-        All Entries
-      </NavLink>
-      <NavLink
-        className="m-3 p-4 text-xl bg-blue-400 hover:bg-blue-500 rounded-md font-medium text-white"
-        to={"/create"}
-      >
-        New Entry
-      </NavLink>
+    <nav className="grid-cols-2 sm:grid grid-cols-3 justify-items-center items-center">
+      <div className="col-start-1 sm:col-start-2 flex justify-center">
+        <NavLink
+          className="m-3 p-4 text-xl bg-blue-400 hover:bg-blue-500 rounded-md font-medium text-white"
+          to={"/"}
+        >
+          All Entries
+        </NavLink>
+        <NavLink
+          className="m-3 p-4 text-xl bg-blue-400 hover:bg-blue-500 rounded-md font-medium text-white"
+          to={"/create"}
+        >
+          New Entry
+        </NavLink>
+      </div>
+
       <button
-        className="m-3 p-4 font-semibold rounded-md bg-blue-400 hover:bg-blue-500"
+        className="m-3 p-4 font-semibold rounded-md bg-blue-400 hover:bg-blue-500 ml-auto"
         onClick={handleToggleOverlay}
       >
         ⚙️

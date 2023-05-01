@@ -7,6 +7,7 @@
     "start": "ts-node ./src/app.ts",
     "dev": "tsnd --respawn ./src/app.ts",
     "test": "jest --testPathPattern=test/",
+    "coverage": "jest --testPathPattern=test/ --coverage",
     "prisma-setup": "prisma migrate dev && prisma generate"
   },
   "keywords": [],

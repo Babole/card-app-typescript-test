@@ -2,3 +2,4 @@
 /backend/prisma/database.db
 /backend/prisma/database.db-journal
 /frontend/node_modules
+/backend/coverage

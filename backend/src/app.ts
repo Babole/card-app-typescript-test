@@ -1,4 +1,6 @@
-import { server } from "./server"
+import buildServer from "./server";
+
+const server = buildServer();
 
 server
   .listen(process.env.PORT || 3001, "0.0.0.0")

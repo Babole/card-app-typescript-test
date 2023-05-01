@@ -45,6 +45,19 @@ To deploy a final build with static files:
 
 [x] convert to Date when passing dates on `/update/:id` route
 
+[x] wrap all routes in a function buildServer and export function
+
+### -- /src/app.ts
+
+[x] import and call buildServer to initialise fastify instance
+
+### -- /test/server.test.ts
+
+[x] create fastify instance and wait for it to be ready before all tests
+
+[x] shutdown fastify instance after all tests
+
+
 ## Changelog - Front End
 
 ### -- tailwind.config.js

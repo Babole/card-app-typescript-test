@@ -18,7 +18,7 @@ export default function NavBar({ darkMode, setDarkMode }: NavBarProps) {
   return (
     <nav className="flex justify-center gap-5">
       <NavLink
-        className="m-3 p-4 text-xl bg-blue-400 hover:bg-blue-500 rounded-md font-medium text-white dark:bg-blue-800" 
+        className="m-3 p-4 text-xl bg-blue-400 hover:bg-blue-500 rounded-md font-medium text-white" 
         to={"/"}
       >
         All Entries

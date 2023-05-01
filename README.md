@@ -35,21 +35,21 @@ To deploy a final build with static files:
 
 ## Changelog - Back End
 
-### /prisma/schema.prisma
+### -- /prisma/schema.prisma
 
 [x] added scheduled_for to Entry model
 
-### /src/server.ts
+### -- /src/server.ts
 
 [x] added check for scheduled_for in req.body on /create/ route
 
 ## Changelog - Front End
 
-### tailwind.config.js
+### -- tailwind.config.js
 
 [x] darkMode determined by 'class'
 
-### /src/App.tsx
+### -- /src/App.tsx
 
 [x] darkMode state stored using useState hook
 
@@ -59,7 +59,7 @@ To deploy a final build with static files:
 
 [x] section element background change on truthy darkMode state
 
-### /src/components/NavBar.tsx
+### -- /src/components/NavBar.tsx
 
 [x] define type for props
 
@@ -69,7 +69,7 @@ To deploy a final build with static files:
 
 [x] SettingsDialog displayed on truthy showOverlay state
 
-### /src/components/SettingsDialog.tsx
+### -- /src/components/SettingsDialog.tsx
 
 [x] define type for props
 
@@ -78,3 +78,13 @@ To deploy a final build with static files:
 [x] add button to toggle overlay
 
 [x] dynamically change dark mode button label
+
+### -- /src/@types/context.d.ts
+
+[x] update Entry type
+
+### -- /src/routes/NewEntry.tsx
+
+[x] add date input for scheduled_for date
+
+[x] add labels for date inputs

@@ -7,6 +7,7 @@ export default function NewEntry() {
     title: "",
     description: "",
     created_at: new Date(),
+    scheduled_for: new Date(),
   };
   const { saveEntry } = useContext(EntryContext) as EntryContextType;
   const [newEntry, setNewEntry] = useState<Entry>(emptyEntry);
@@ -39,11 +40,24 @@ export default function NewEntry() {
         value={newEntry.description}
         onChange={handleInputChange}
       />
+      <label className="dark:text-white" htmlFor="created_at">
+        Created At
+      </label>
       <input
         className="p-3 rounded-md dark:bg-zinc-500 dark:text-white"
         type="date"
         name="created_at"
         value={new Date(newEntry.created_at).toISOString().split("T")[0]}
+        onChange={handleInputChange}
+      />
+      <label className="dark:text-white" htmlFor="scheduled_for">
+        Scheduled For
+      </label>
+      <input
+        className="p-3 rounded-md dark:bg-zinc-500 dark:text-white"
+        type="date"
+        name="scheduled_for"
+        value={new Date(newEntry.scheduled_for).toISOString().split("T")[0]}
         onChange={handleInputChange}
       />
       <button

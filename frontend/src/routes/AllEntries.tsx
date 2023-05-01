@@ -33,7 +33,9 @@ export default function AllEntries() {
             key={index}
             className="bg-gray-300 shadow-md shadow-gray-500 m-3 p-4 rounded flex flex-col justify-between dark:bg-zinc-800 dark:shadow-zinc-700"
           >
-            <h1 className="font-bold text-sm md:text-lg dark:text-white">{entry.title}</h1>
+            <h1 className="font-bold text-sm md:text-lg dark:text-white">
+              {entry.title}
+            </h1>
             <p className="text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3 dark:text-zinc-400 dark:font-normal">
               {entry.description}
             </p>
@@ -56,9 +58,19 @@ export default function AllEntries() {
                   🖊
                 </button>
               </div>
-              <time className="text-right text-sm md:text-lg dark:text-zinc-600 dark:font-medium">
-                {new Date(entry.created_at.toString()).toLocaleDateString()}
-              </time>
+
+              <div className="flex flex-col 2xl:flex-row items-center">
+                <p className="dark:text-zinc-500">created on:</p>
+                <time className="text-right text-sm md:text-lg dark:text-zinc-600 dark:font-medium xl:mx-2">
+                  {new Date(entry.created_at.toString()).toLocaleDateString()}
+                </time>
+                <p className="dark:text-zinc-500">scheduled for:</p>
+                <time className="text-right text-sm md:text-lg dark:text-zinc-600 dark:font-medium xl:mx-2">
+                  {new Date(
+                    entry.scheduled_for.toString()
+                  ).toLocaleDateString()}
+                </time>
+              </div>
             </section>
           </div>
         );

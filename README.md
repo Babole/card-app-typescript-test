@@ -88,3 +88,9 @@ To deploy a final build with static files:
 [x] add date input for scheduled_for date
 
 [x] add labels for date inputs
+
+### -- /src/routes/AllEntries.tsx
+
+[x] display scheduled_for date with each card
+
+[x] add labels for dates
